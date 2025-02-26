@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    <div class="h-screen bg-teal-400">
+        <div class="appScreen w-[500px] h-screen mx-auto flex flex-col justify-center bg-gray-100">
+            <div class="logo flex flex-col justify-center items-center -mb-24">
+                <img src="./assets/bg.png" alt="">
+                <img class="absolute -mt-24" src="./assets/Group.png" alt="">
+            </div>
+            <div class="content mx-5">
+                <form class="card-body bg-white rounded-xl">
+                    <div id="accDiv" class="form-control">
+                      <label class="label font-semibold">
+                        <span class="label-text font-semibold">Account Number</span>
+                      </label>
+                      <input id="logAcNumb" value="01864259966" type="text" placeholder="Enter your 11 digit account Number" class="input bg-gray-100 rounded-full" required/>
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-semibold">4 digit Pin</span>
+                      </label>
+                      <input id="accPin" value="1234" type="number" placeholder="Enter Your Four digit pin" class="input bg-gray-100 rounded-full" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="login-btn" class="btn btn-primary text-lg rounded-full border-none bg-sky-500">Login</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>
