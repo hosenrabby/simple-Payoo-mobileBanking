@@ -10,10 +10,10 @@ document.getElementById("login-btn").addEventListener("click",function (event) {
             window.location.href = "main.html";
         } else {
             document.getElementById("accPin").classList.add('outline-2', 'outline-red-500','text-red-500');
-        alert('Wrong Account Number')
+        alert('Wrong Pin Number')
         }
     } else{
         document.getElementById("logAcNumb").classList.add('outline-2', 'outline-red-500','text-red-500');
-        alert('Wrong Pin Number')
+        alert('Wrong Account Number')
     }
 })
