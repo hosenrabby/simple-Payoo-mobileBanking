@@ -8,3 +8,12 @@ function convertValueById (id) {
 function toggleContentById(id,disValue) {
     document.getElementById(id).style.display = disValue;
 }
+function redirectToTrans() {
+        toggleContentById("addMoneys", "none");
+        toggleContentById("withrawCash", "none");
+        toggleContentById("moneyTrans", "none");
+        toggleContentById("getBonus", "none");
+        toggleContentById("payBill", "none");
+        toggleContentById("transections", "block");
+        return
+}

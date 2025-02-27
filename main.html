@@ -18,7 +18,7 @@
                     <img src="./assets/Group.png" alt="">
                 </div>
                 <div class="main-balance">
-                    <h1 class="text-3xl">$ <span>50000</span></h1>
+                    <h1 class="text-3xl">$ <span id="mainBlnc">50000</span></h1>
                     <p>Available Balance</p>
                 </div>
                     <button id="logout" class="bg-transparent text-gray-500 vorder border border-gray-500 px-5 py-1 rounded-lg"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
@@ -65,12 +65,11 @@
                     <p>View All</p>
                 </div>
 
-                <div class="flex justify-between items-center border border-gray-500 p-2 px-8 rounded-md">
+                <div id="allTrans" class="border border-gray-500 p-2 px-8 rounded-md">
                     <div class="trans-detail">
                         <h1 class="text-lg font-semibold">Bank Deposit</h1>
                         <p>Today 01:44 PM</p>
                     </div>
-                    <i class="fa-solid fa-hand-point-up text-2xl"></i>
                 </div>
             </section>
 
@@ -81,7 +80,7 @@
                       <label class="label-text font-semibold">
                         <span class="label font-semibold">Select A Bank</span>
                       </label>
-                      <select class="select bg-gray-100 rounded-full">
+                      <select id="selectData" class="select bg-gray-100 rounded-full">
                         <option disabled selected>Select a Bank</option>
                         <option value="Bikas">Bikas</option>
                         <option value="Nagad">Nagad</option>
@@ -93,22 +92,22 @@
                       <label class="label-text font-semibold">
                         <span class="label font-semibold">Bank Account Number</span>
                       </label>
-                      <input type="text" placeholder="Enter your 11 digit account Number" class="input bg-gray-100 rounded-full" required />
+                      <input id="accAddMoney" type="text" placeholder="Enter your 11 digit account Number" class="input bg-gray-100 rounded-full" value="01864259966" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text font-semibold">Amount to Add</span>
                       </label>
-                      <input type="number" placeholder="Add Amount to withdraw" class="input bg-gray-100 rounded-full" required />
+                      <input id="addAmount" type="number" placeholder="Add Amount to withdraw" class="input bg-gray-100 rounded-full" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text font-semibold">Pin Number</span>
                       </label>
-                      <input type="password" placeholder="Enter Your Four digit pin" class="input bg-gray-100 rounded-full" required />
+                      <input id="addMoneyPin" type="password" placeholder="Enter Your Four digit pin" class="input bg-gray-100 rounded-full" value="1234" required />
                     </div>
                     <div class="form-control mt-6">
-                      <button class="btn btn-primary text-lg rounded-full border-none bg-sky-500">Add Money</button>
+                      <button id="addMoney" class="btn btn-primary text-lg rounded-full border-none bg-sky-500">Add Money</button>
                     </div>
                   </form>
             </section>
@@ -120,22 +119,22 @@
                       <label class="label-text font-semibold">
                         <span class="label font-semibold">Bank Account Number</span>
                       </label>
-                      <input type="text" placeholder="Enter your 11 digit account Number" class="input bg-gray-100 rounded-full" required />
+                      <input id="cashOutAcc" type="text" placeholder="Enter your 11 digit account Number" class="input bg-gray-100 rounded-full" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text font-semibold">Withraw Amount</span>
                       </label>
-                      <input type="number" placeholder="Add Amount to withdraw" class="input bg-gray-100 rounded-full" required />
+                      <input id="cashOutAmnt" type="number" placeholder="Add Amount to withdraw" class="input bg-gray-100 rounded-full" required />
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text font-semibold">Pin Number</span>
                       </label>
-                      <input type="password" placeholder="Enter Your Four digit pin" class="input bg-gray-100 rounded-full" required />
+                      <input id="cashOutPin" type="password" placeholder="Enter Your Four digit pin" class="input bg-gray-100 rounded-full" required />
                     </div>
                     <div class="form-control mt-6">
-                      <button class="btn btn-primary text-lg rounded-full border-none bg-sky-500">Withraw Money</button>
+                      <button id="cashOut" class="btn btn-primary text-lg rounded-full border-none bg-sky-500">Withraw Money</button>
                     </div>
                   </form>
             </section>
@@ -227,5 +226,6 @@
     <script src="scripts/utilities.js"></script>
     <script src="scripts/toggle.js"></script>
     <script src="/scripts/logout.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

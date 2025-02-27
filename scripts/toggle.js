@@ -53,5 +53,6 @@ document.getElementById("actTrans").addEventListener("click",function (event) {
     toggleContentById("getBonus", "none");
     toggleContentById("payBill", "none");
     toggleContentById("transections", "block");
+    return
 })
     
